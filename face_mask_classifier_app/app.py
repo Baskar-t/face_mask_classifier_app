@@ -37,7 +37,7 @@ def mask_image():
     face_confidence_list=[]
 
     # load the input image from disk
-    image = "./images/out.jpg"
+    image = "./face_mask_classifier_app/images/out.jpg"
     img=cv2.imread("./face_mask_classifier_app/images/out.jpg")
     faces_array_train = face_detect_model.extract(image, threshold=0.95)
     for j in range(len(faces_array_train)):

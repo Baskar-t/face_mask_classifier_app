@@ -29,7 +29,7 @@ def mask_image():
     #load mask classifier models
     print("[INFO] loading face mask detector model...")
     #model = load_model(args["model"])
-    model = pickle.load(open("https://github.com/Baskar-t/face_mask_classifier_app/blob/main/face_mask_classifier_app/models/svm_classifier_model_initial.sav", 'rb'))
+    model = pickle.load(open("models/svm_classifier_model_initial.sav", 'rb'))
 
     embed_list_test=[]
     face_box_list=[]

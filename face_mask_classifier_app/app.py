@@ -39,7 +39,7 @@ def mask_image():
     # load the input image from disk
     image = "./face_mask_classifier_app/images/out.jpg"
     img=cv2.imread(image)
-    faces_array_train = face_detect_model.extract(image, threshold=0.95)
+    faces_array_train = face_detect_model.extract(img, threshold=0.95)
     for j in range(len(faces_array_train)):
         face_embed_dict=faces_array_train[j]
         face_embed=face_embed_dict['embedding']

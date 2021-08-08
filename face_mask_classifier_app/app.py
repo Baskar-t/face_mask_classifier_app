@@ -29,7 +29,7 @@ def mask_image():
     #load mask classifier models
     print("[INFO] loading face mask detector model...")
     #model = load_model(args["model"])
-    model = pickle.load("svm_classifier_model_initial.sav",'rb')
+    model = pickle.load("svm_classifier_model_initial.sav",'r')
 
     embed_list_test=[]
     face_box_list=[]

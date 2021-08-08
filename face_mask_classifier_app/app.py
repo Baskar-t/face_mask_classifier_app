@@ -71,7 +71,7 @@ def mask_image():
     cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
     cv2.rectangle(img, (X, Y), (endX, endY), color, 2)
 
-    #RGB_img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    RGB_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 
 mask_image()

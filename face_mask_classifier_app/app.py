@@ -78,7 +78,7 @@ mask_image()
 
 
 def mask_detection():
-    local_css("css/styles.css")
+    #local_css("css/styles.css")
     st.markdown('<h1 align="center">😷 Face Mask Detection</h1>',
                 unsafe_allow_html=True)
     activities = ["Image"]

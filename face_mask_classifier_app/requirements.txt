@@ -67,3 +67,5 @@ urllib3==1.26.5
 wcwidth==0.2.5
 Werkzeug==2.0.1
 wrapt==1.12.1
+streamlit==0.79.0
+opencv-contrib-python-headless

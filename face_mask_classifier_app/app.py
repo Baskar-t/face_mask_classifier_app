@@ -63,8 +63,8 @@ def mask_image():
     w=face_box_list[0][2]
     h=face_box_list[0][3]
     (X, Y) = max(0, X), max(0, Y)
-    endX = min(w - 1, w)
-    endY= min(h - 1, h)
+    endX =  w
+    endY=  h
     #include the probability in the label
     label = "{}: {:.2f}%".format(label, proba[0][0] * 100)
     cv2.putText(img, label, (X, Y - 10),

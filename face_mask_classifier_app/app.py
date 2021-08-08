@@ -37,7 +37,7 @@ def mask_image():
     face_confidence_list=[]
 
     # load the input image from disk
-    image = "./images/out.jpg"
+    image = "./face_mask_classifier_app/images/out.jpg"
     img=cv2.imread(image)
     faces_array_train = face_detect_model.extract(image, threshold=0.95)
     for j in range(len(faces_array_train)):
@@ -94,7 +94,7 @@ def mask_detection():
         image_file = st.file_uploader("", type=['jpg'])  # upload image
         if image_file is not None:
             our_image = Image.open(image_file)  # making compatible to PIL
-            im = our_image.save('./images/out.jpg')
+            im = our_image.save('./face_mask_classifier_app/images/out.jpg')
             saved_image = st.image(
                 image_file, caption='', use_column_width=True)
             st.markdown(

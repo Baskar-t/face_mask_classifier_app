@@ -94,7 +94,7 @@ def mask_detection():
         image_file = st.file_uploader("", type=['jpg'])  # upload image
         if image_file is not None:
             our_image = Image.open(image_file)  # making compatible to PIL
-            im = our_image.save('./face_mask_classifier_app/images/out.jpg','w+b')
+            im = our_image.save('./face_mask_classifier_app/images/out.jpg','w')
             saved_image = st.image(
                 image_file, caption='', use_column_width=True)
             st.markdown(

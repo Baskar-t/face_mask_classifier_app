@@ -96,7 +96,7 @@ def mask_detection():
             our_image = Image.open(image_file)  # making compatible to PIL
             im = our_image.save('out.jpg')
             saved_image = st.image(
-                image_file, caption='', use_column_width=True)
+                im, caption='', use_column_width=True)
             st.markdown(
                 '<h3 align="center">Image uploaded successfully!</h3>', unsafe_allow_html=True)
             if st.button('Process'):

@@ -3,3 +3,4 @@ Pillow
 numpy
 streamlit==0.79.0
 opencv-contrib-python-headless
+opencv-python
